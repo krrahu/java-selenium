@@ -11,26 +11,31 @@ public class openbrowser {
 	public static void main(String[] args) throws InterruptedException {
 		// all type of browser path setting
 		
-	
-		/*firefox launch
-		System.setProperty("webdriver.gecko.driver", "C:\\Softwares\\Drivers\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();*/
+		//WebDriverManager.chromedriver().setup(); // use this when we don't want set path for browser
 		
-		/*
-		 * //micrsoft edge launch System.setProperty("webdriver.edge.driver",
-		 * "C:\\Softwares\\Drivers\\msedgedriver.exe"); WebDriver driver= new
-		 * EdgeDriver();
-		 */
+		
+		// firefox launch - geckodriver download
+//		System.setProperty("webdriver.gecko.driver","C:\\Softwares\\Drivers\\geckodriver.exe");
+//		WebDriver driver= new FirefoxDriver();
+		
+		
+		  //micrsoft edge launch 
+//		System.setProperty("webdriver.edge.driver","C:\\Softwares\\Drivers\\msedgedriver.exe"); 
+//		WebDriver driver= new EdgeDriver();
+		 
 				
 		// chrome launch 
 		//System.setProperty("webdriver.chrome.driver", "C:\\SeleniumTutorials\\Drivers\\chromedriver.exe");
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Softwares\\Drivers\\chromedriver.exe");
-
-		ChromeOptions op= new ChromeOptions(); op.addArguments("--remote-allow-origins=*"); // use want url not launhes
+		System.setProperty("webdriver.chrome.driver","C:\\Softwares\\Drivers\\chromedriver.exe");
+		ChromeOptions op= new ChromeOptions();
+		op.addArguments("--remote-allow-origins=*"); // use want url not launhes
 	    WebDriver driver= new ChromeDriver(op);
-	   // Thread.sleep(3000);
-		driver.get("https://test-rca.customer.tui/validate-booking");
+		
+		//WebDriver driver= new ChromeDriver();
+		//driver.get("https://googlechromelabs.github.io/chrome-for-testing/");
+   Thread.sleep(3000);
+		driver.get("https://www.google.co.in/");
 		
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
