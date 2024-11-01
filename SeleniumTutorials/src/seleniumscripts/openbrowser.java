@@ -39,7 +39,7 @@ public class openbrowser {
 		
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		//driver.quit();
+		driver.quit();
 	
 		
 
