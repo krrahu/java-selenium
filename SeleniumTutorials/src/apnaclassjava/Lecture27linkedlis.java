@@ -38,7 +38,7 @@ public class Lecture27linkedlis {
 				head=newNode;
 				return;	
 			}
-			Node currNode.next=head;
+			Node currNode=head;
 			while (currNode.next !=null) {
 				currNode=currNode.next;
 			}
@@ -54,7 +54,7 @@ public class Lecture27linkedlis {
 				
 			}
 		Node currNode.next=head;
-		while (currNode =!null) {
+		while (currNode=!null) {
 			System.out.print(currNode.data +" -->");
 			currNode=currNode.next;
 		}
