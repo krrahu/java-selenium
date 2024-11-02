@@ -47,7 +47,7 @@ public class Locators {
 				//driver.quit();
 				//System.out.println("browsr is closed");
 			
-				
+				System.out.println();
 
 	}
 
