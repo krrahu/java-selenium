@@ -53,8 +53,8 @@ public class Lecture27linkedlis {
 				return;
 				
 			}
-		Node currNode.next=head;
-		while (currNode=!null) {
+		Node currNode=head;
+		while (currNode!=null) {
 			System.out.print(currNode.data +" -->");
 			currNode=currNode.next;
 		}
@@ -99,7 +99,7 @@ public class Lecture27linkedlis {
 	public static void main(String[] args) {
 		// 
 		
-		Lecture27linkedlis LL =new LL Lecture27linkedlis();
+		Lecture27linkedlis LL =new  Lecture27linkedlis();
 		LL.addFirst("a");
 		LL.addFirst("is");
 		LL.printList();
