@@ -9,7 +9,15 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class OpeningBrowser {
 		
-
+	public static void main(String[] args) {
+	//	OpeningBrowser ob= new OpeningBrowser();
+		//ob.OpenChromebrowser();
+		OpeningBrowser.OpenChromebrowser();
+		//OpeningBrowser.OpenFirefoxbrowser();
+		//OpeningBrowser.OpenEdgebrowser();
+	}
+	
+	
 	// opening chrome browser 
 	public static void OpenChromebrowser() {
 			
@@ -42,18 +50,12 @@ public class OpeningBrowser {
 		 */
 		
 	// reading data from excel file 
-		public static void readdata()
-		{
-			// we will write the logic here
-		}
+		//public static void readdata()
+	//	{
+			// write the logic here
+		//}
 		
 		
 		
-		public static void main(String[] args) {
-			OpeningBrowser ob= new OpeningBrowser();
-			//ob.OpenChromebrowser();
-			OpeningBrowser.OpenChromebrowser();
-			//OpeningBrowser.OpenFirefoxbrowser();
-			//OpeningBrowser.OpenEdgebrowser();
-		}
+		
 }

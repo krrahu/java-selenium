@@ -8,7 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class Locators {
+import dev.failsafe.internal.util.Assert;
+
+public class Locators5_7 {
 
 	public static void main(String[] args) throws InterruptedException {
 		// chrome launch 
@@ -33,19 +35,19 @@ public class Locators {
 				// class name Locator (step 1)
 				driver.findElement(By.className("signInBtn")).click();
 				// css locator ((step 1)
-		   System.out.println(driver.findElement(By.cssSelector("p.error")).getText()); // when crendial is wrong 
+		   System.out.println(driver.findElement(By.cssSelector("p.error")).getText()); // when credentials is wrong 
 				System.out.println("login unsucessfully due to inccorect PWD or UN"); 
 				
-				// link text Locator (step 2)
+				// link text Locator (step 2-click on Forgot your password?)
 				driver.findElement(By.linkText("Forgot your password?")).click();
 				System.out.println("naviagte to forgot password screen");
 				
-				// X-path and CSS  Locator (step 3)
+				// X-path and CSS  Locator (step 3-enterning the values for name,email,phone number)
 				driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("test");
 				driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("test@gmail.com");
 				driver.findElement(By.xpath("//input[@type='text'][3]")).sendKeys("98878798798");
 				
-				// class name Locator (step 4)
+				// class name Locator (step 4-reset login and store error message)
 				driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
 				
 			    System.out.println(driver.findElement(By.className("infoMsg")).getText()); // error message
@@ -75,9 +77,16 @@ public class Locators {
 				//driver.findElement(By.className("signInBtn")).click();
 				
 				System.out.println("login sucessfully");
+				// get and store and print success message 
+				Thread.sleep(2000);
+				//driver.findElement(By.xpath("//p[@xpath='1']")).getText(); // Xpath
+			System.out.println(driver.findElement(By.tagName("p")).getText());//  tag name 
+			//Assert.assertEquals("","");
+				
 				
 				// step 7:-  logout 
 				driver.findElement(By.className("logout-btn")).click();
+				
                 // driver.quit();
 				// System.out.println("browsr is closed");
 			
