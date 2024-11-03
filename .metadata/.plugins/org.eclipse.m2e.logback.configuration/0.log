@@ -8,3 +8,7 @@
 2024-11-03 22:03:22,050 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\rkumar20\git\java-selenium\SeleniumTutorials\src\main\resources
 2024-11-03 22:03:22,054 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-11-03 22:03:22,058 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\rkumar20\git\java-selenium\SeleniumTutorials\src\test\resources
+2024-11-03 22:11:58,635 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-03 22:11:58,638 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\rkumar20\git\java-selenium\SeleniumTutorials\src\main\resources
+2024-11-03 22:11:58,645 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-03 22:11:58,649 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\rkumar20\git\java-selenium\SeleniumTutorials\src\test\resources
