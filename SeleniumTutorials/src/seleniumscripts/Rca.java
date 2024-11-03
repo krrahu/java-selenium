@@ -14,7 +14,7 @@ public class Rca {
 				
 				System.out.println(driver.getTitle());
 				System.out.println(driver.getCurrentUrl());
-				//driver.quit();
+				driver.quit();
 				//driver.close();
 
 	}
