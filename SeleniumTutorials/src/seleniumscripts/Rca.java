@@ -6,7 +6,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Rca {
 
 	public static void main(String[] args) throws InterruptedException {
+<<<<<<< HEAD
 		
+=======
+		/*chrome launch*/
+				System.setProperty("webdriver.chrome.driver", "C:\\Softwares\\Drivers\\chromedriver.exe");
+				WebDriver driver= new ChromeDriver();
+				driver.get("https://test-rca.customer.tui/validate-booking");
+				//Thread.sleep(3000);
+				
+				System.out.println(driver.getTitle());
+				System.out.println(driver.getCurrentUrl());
+				driver.quit();
+				//driver.close();
+>>>>>>> cbef7462be097130662c06a9ab47faea5928c60f
 
 	}
 
