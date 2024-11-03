@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import dev.failsafe.internal.util.Assert;
 
-public class Locators5_7 {
+public class Locators5_6 {
 
 	public static void main(String[] args) throws InterruptedException {
 		// chrome launch 
