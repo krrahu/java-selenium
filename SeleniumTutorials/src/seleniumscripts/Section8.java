@@ -14,7 +14,7 @@ public class Section8 {
 	// part - 71  to 75
 	
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Softwares\\Drivers\\chromedriver100.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Softwares\\Drivers\\chromedriver.exe");
 		ChromeOptions op= new ChromeOptions();
 		op.addArguments("--remote-allow-origins=*"); // use this when url is not launching
 	    WebDriver driver= new ChromeDriver(op);
@@ -24,6 +24,7 @@ public class Section8 {
 	    String [] itemsNeeded= {"cucumer","carrot","beetroot"};
 	    // Open webpage
 	    driver.get("https://rahulshettyacademy.com/seleniumPractise/");
+	    
 	    Thread.sleep(4000);
 	    driver.manage().window().maximize();
 	    List<WebElement>products=    driver.findElements(By.cssSelector("h4.product-name"));

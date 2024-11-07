@@ -1,12 +1,16 @@
 package seleniumscripts;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import graphql.Assert;
@@ -37,29 +41,29 @@ public class Section7_DropSelection {
 //		 System.out.println(dropdown.getFirstSelectedOption().getText());  
 		 
 		 //------------------ part -53  (not working due to pop-up not handled)------------------
-		// driver.navigate().to("https://www.spicejet.com/");
-		 //Thread.sleep(10000);
-		// driver.findElement(By.className(""))
-		// driver.findElement(By.className("css-1dbjc4n")); // opening passenger drop down 
-		// driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); // selecting passenger count
+		driver.navigate().to("https://www.spicejet.com/");
+		 Thread.sleep(10000);
+		 
+		 driver.findElement(By.className("css-1dbjc4n")); // opening passenger drop down 
+		 driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); // getting total passenger count
 		 
 		 // selecting passenger count by using loop
 		 
-//		 int i=1;
-//		 while (i<5)
-//		 {
-//			 driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); 
-//			 i++;
-//			 
-//		 }
-//		 for (int j = 0; j < 5; j++) {
-//			 driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); 
-//		}
-//		 
-//		 driver.findElement(By.xpath("//div[@class='css-1dbjc4n']")).click();
+		 int i=1;
+		 while (i<5)
+		 {
+			 driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); 
+			 i++;
+			 
+		 }
+		 for (int j = 0; j < 5; j++) {
+			 driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); 
+		}
+		 
+	 driver.findElement(By.xpath("//div[@class='css-1dbjc4n']")).click();
 //		 driver.close();
 		 
-	// 55 dynamic dropdown ( interview)( revisit due to spice jet pop-up issue)
+	// -----------------55 dynamic dropdown ( interview)( revisit due to spice jet pop-up issue)-----------------
 		    
 		// driver.navigate().to("https://www.spicejet.com/");
 		 
@@ -115,7 +119,7 @@ public class Section7_DropSelection {
          // input[type='checkbox'] --> totalcount of checkbox
        // System.out.println( driver.findElements(By.cssSelector("input[type='checkbox']")).size());
          
-       // Assertion(part 61)
+       // ----------------------------------Assertion(part 61)----------------------------------
 //        Assert.assertFalse(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 //        System.out.println("assertion pass");
 //       Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
@@ -162,20 +166,20 @@ public class Section7_DropSelection {
 		   //driver.switchTo().alert().dismiss(); 
 		    
 		    
-		    driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-		 // signle buttom on alert 
-		   driver.findElement(By.id("name")).sendKeys("Alert - test");
-		   driver.findElement(By.id("alertbtn")).click();
-		   System.out.println(driver.switchTo().alert().getText());
-		    driver.switchTo().alert().accept();
-	
-		 // signle buttom on alert 
-		    
-		    driver.findElement(By.id("name")).sendKeys("cofirm -test");
-		    driver.findElement(By.cssSelector("[id='confirmbtn']")).click(); // 
-		    System.out.println(driver.switchTo().alert().getText());
-		    driver.switchTo().alert().dismiss();
-		    
+//		    driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+//		 // signle buttom on alert 
+//		   driver.findElement(By.id("name")).sendKeys("Alert - test");
+//		   driver.findElement(By.id("alertbtn")).click();
+//		   System.out.println(driver.switchTo().alert().getText());
+//		    driver.switchTo().alert().accept();
+//	
+//		 // signle buttom on alert 
+//		    
+//		    driver.findElement(By.id("name")).sendKeys("cofirm -test");
+//		    driver.findElement(By.cssSelector("[id='confirmbtn']")).click(); // 
+//		    System.out.println(driver.switchTo().alert().getText());
+//		    driver.switchTo().alert().dismiss();
+//		    
 		    
 		    
 		    //-----------------------------------------------------------------------------------//
