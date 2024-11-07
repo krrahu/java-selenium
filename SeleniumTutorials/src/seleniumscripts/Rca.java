@@ -10,7 +10,7 @@ public class Rca {
 		/*chrome launch*/
 				System.setProperty("webdriver.chrome.driver", "C:\\Softwares\\Drivers\\chromedriver.exe");
 				WebDriver driver= new ChromeDriver();
-				driver.get("https://test-rca.customer.tui/validate-booking");
+				driver.get("https://www.google.co.in/");
 				//Thread.sleep(3000);
 				
 				System.out.println(driver.getTitle());
