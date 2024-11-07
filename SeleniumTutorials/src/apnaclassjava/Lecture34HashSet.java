@@ -3,10 +3,10 @@ package apnaclassjava;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class Lecture34hashing {
+public class Lecture34HashSet {
 
 	public static void main(String[] args) {
-		// creating
+		// creating 
 		
 		HashSet< Integer> set=new HashSet< Integer>();
 		//Insert
@@ -15,7 +15,7 @@ public class Lecture34hashing {
 		set.add(3);
 		set.add(1); //list.add(el)
 		
-		//print all elements
+		//print all elements but it will be unique only no duplicates
 		System.out.println(set); // dupicate values will not print
 		// search
 		if (set.contains(1)) {

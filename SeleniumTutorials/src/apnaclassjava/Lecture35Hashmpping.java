@@ -8,7 +8,7 @@ import org.zeromq.ZStar.Set;
 public class Lecture35Hashmpping {
 
 	public static void main(String[] args) {
-		// country(key), popuation (value)
+		// HashMap is key value pair , country(key), popuation (value)
 		HashMap <String,Integer> map= new HashMap<>();
 		
 		// insertaion (key,value)
@@ -43,6 +43,7 @@ public class Lecture35Hashmpping {
 			
 		}
 		System.out.println();
+		
 		
 		// for (int i : arr)
 		for (Map.Entry<String,Integer>e: map.entrySet()) 
