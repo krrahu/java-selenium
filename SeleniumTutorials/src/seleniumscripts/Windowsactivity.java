@@ -17,6 +17,7 @@ public class Windowsactivity {
 	    driver.navigate().back();
 	    Thread.sleep(4000);
 	    driver.navigate().forward();
+	    System.out.println("end");
 
 	}
 
