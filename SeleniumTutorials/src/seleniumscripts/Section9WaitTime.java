@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Section9 {
+public class Section9WaitTime {
 
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws InterruptedException {

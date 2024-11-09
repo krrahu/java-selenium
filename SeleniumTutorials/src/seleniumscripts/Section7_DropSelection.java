@@ -1,5 +1,7 @@
 package seleniumscripts;
 
+//import selenium.webdriver.chrome.options  
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,8 +23,10 @@ public class Section7_DropSelection {
 		
 			System.setProperty("webdriver.chrome.driver","C:\\Softwares\\Drivers\\chromedriver.exe");
 			ChromeOptions op= new ChromeOptions();
+			//op.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));// handling multiple opening pop-up 
 			op.addArguments("--remote-allow-origins=*"); // use this when url is not launching
-		    WebDriver driver= new ChromeDriver(op);
+			op.addArguments("--disable-notifications"); // used to habled allow cancel notification 
+		    WebDriver driver= new ChromeDriver(op);		    		
 		    
 		    // ------------------part - 52 ------------------
 		    
@@ -40,28 +44,41 @@ public class Section7_DropSelection {
 //		 dropdown.selectByValue("INR"); // this attribute value take it by inspecting the filed
 //		 System.out.println(dropdown.getFirstSelectedOption().getText());  
 		 
-		 //------------------ part -53  (not working due to pop-up not handled)------------------
+		 //------------------ part -53  ()------------------
 		driver.navigate().to("https://www.spicejet.com/");
-		 Thread.sleep(10000);
+	
+		
+		 driver.manage().window().maximize();
+		 System.out.println("screen got maximize");
+		
+		// opening passenger drop down 
+	
+		 driver.findElement(By.xpath("//div[@class='css-1dbjc4n r-18u37iz r-19h5ruw r-184en5c']")).click();
+		 System.out.println("test 1"); 
+			// click on add Adult  passenger 
+		 driver.findElement(By.cssSelector("div[data-testid='Adult-testID-plus-one-cta']")).click(); // for single selection 
+	
+		 System.out.println("test 2");
+		
+		 // selecting passenger count by using loop by using while or for loop
 		 
-		 driver.findElement(By.className("css-1dbjc4n")); // opening passenger drop down 
-		 driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); // getting total passenger count
+		 // 1st way - while loop
+//		 int i=1;
+//		 while (i<5)
+//		 {
+//			 driver.findElement(By.cssSelector("div[data-testid='Adult-testID-plus-one-cta']")).click(); 
+//			 i++;
+//			 
+//		 }
 		 
-		 // selecting passenger count by using loop
-		 
-		 int i=1;
-		 while (i<5)
-		 {
-			 driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); 
-			 i++;
-			 
-		 }
+		 // 2nd way -for loop 
 		 for (int j = 0; j < 5; j++) {
-			 driver.findElement(By.className("css-76zvg2 css-bfa6kz r-homxoj r-ubezar")); 
+			 driver.findElement(By.cssSelector("div[data-testid='Adult-testID-plus-one-cta']")).click(); 
 		}
 		 
-	 driver.findElement(By.xpath("//div[@class='css-1dbjc4n']")).click();
-//		 driver.close();
+	// clicking on done button	 
+	 driver.findElement(By.xpath("//div[@data-testid='home-page-travellers-done-cta']")).click();
+		 driver.close();
 		 
 	// -----------------55 dynamic dropdown ( interview)( revisit due to spice jet pop-up issue)-----------------
 		    
@@ -173,7 +190,7 @@ public class Section7_DropSelection {
 //		   System.out.println(driver.switchTo().alert().getText());
 //		    driver.switchTo().alert().accept();
 //	
-//		 // signle buttom on alert 
+//		 // 2 buttons on alert 
 //		    
 //		    driver.findElement(By.id("name")).sendKeys("cofirm -test");
 //		    driver.findElement(By.cssSelector("[id='confirmbtn']")).click(); // 
@@ -183,6 +200,6 @@ public class Section7_DropSelection {
 		    
 		    
 		    //-----------------------------------------------------------------------------------//
-		    driver.quit();
+		   // driver.quit();
 			}
 }
