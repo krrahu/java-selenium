@@ -25,6 +25,7 @@ public class Section10 {
 	   // actions class ( to move cursor) 
 	   Actions a=new Actions(driver);
 	  
+	  
 	   
 	   //-------------- moving mouse to specific element like hello ,Sign in--------------------// 
 	// WebElement move=driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']"));
@@ -35,6 +36,7 @@ public class Section10 {
 		//------------- entering hello keyword ----------------------//
 		WebElement move1=driver.findElement(By.id("nav-search-bar-form"));
 		a.moveToElement(move1).click().keyDown(Keys.SHIFT).sendKeys("hello");
+		
 	
 		
 		// ----------------hot to handle frames (part 91,92)----------------// 
