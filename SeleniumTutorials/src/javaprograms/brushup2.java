@@ -16,11 +16,11 @@ public class brushup2
 		{
 			if(arr1[i] %2==0)
 			{
-			//	System.out.println(arr1[i]);
+				System.out.println(arr1[i] + " "+ "multiple of 2");
 				//break; // to exist the loop
 			}
 			else{
-				//System.out.println(arr1[i] + "not multiple of 2");
+				System.out.println(arr1[i] + "not multiple of 2");
 			}
 			
 			
@@ -46,12 +46,13 @@ public class brushup2
 		// item to check in arraylist
 		System.out.println(al.contains("test"));
 		// below one is normal array we can use contaion() so to it we are converting array into Arraylist
+		
 		int []arr11= {1,2,3,4,5,6};// normal array
-		List<int[]> alist=Arrays.asList(arr11); // converting into arraylist
-		System.out.println(alist.contains(9));// using contaion() 
+		List<int[]> alist=Arrays.asList(arr11); // converting integer into arraylist
+		System.out.println(alist.contains(9));// using contain() 
 		
 		String [] str= {"test","password","weak"};
-		List<String> strlist=Arrays.asList(str);
+		List<String> strlist=Arrays.asList(str); // converting string into arraylist
 		System.out.println(strlist.contains("test"));
 		
 	}

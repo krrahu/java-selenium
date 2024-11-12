@@ -22,12 +22,19 @@ public class sum
 		return additon;
 		//System.out.println(m1());
 	}
+	public double m3()
+	{
+		double sub=a-b;
+		return sub;
+		
+				
+	}
 	
 	public static class Subclass
 	{
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		sum s=new sum();
 		s.d=11;
 		System.out.println(s.d);
@@ -39,6 +46,7 @@ public class sum
 		System.out.println(s.sum);
 		System.out.println(s.m1());
 		//4System.out.println(s.m2());
+		//System.out.println(s.m3());
 		
 		
 		

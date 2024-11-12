@@ -12,34 +12,34 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class OpeningBrowser {
 		
 	public static void main(String[] args) {
-		OpeningBrowser ob= new OpeningBrowser();
-		OpeningBrowser.OpenChromebrowser();   
+		//OpeningBrowser ob= new OpeningBrowser();
+		//OpeningBrowser.OpenChromebrowser();   
 		//OpeningBrowser.OpenChromebrowser(); --> directly using class name 
 		//OpeningBrowser.OpenFirefoxbrowser();
-		//OpeningBrowser.OpenEdgebrowser();
+		OpeningBrowser.OpenEdgeBrowser();
 	}
 	
 	
 	// opening chrome browser 
-	public static void OpenChromebrowser() {
+//	public static void OpenChromebrowser() {
 			
-		System.setProperty("webdriver.chrome.driver","C:\\Softwares\\Drivers\\chromedriver.exe");
-		ChromeOptions op= new ChromeOptions();
+	//	System.setProperty("webdriver.chrome.driver","C:\\Softwares\\Drivers\\chromedriver.exe");
+		//ChromeOptions op= new ChromeOptions();
 		//op.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));// handling multiple opening pop-up 
-		op.addArguments("--remote-allow-origins=*"); // use this when url is not launching
-		op.addArguments("--disable-notifications"); // used to habled allow cancel notification 
+		//op.addArguments("--remote-allow-origins=*"); // use this when url is not launching
+		//op.addArguments("--disable-notifications"); // used to habled allow cancel notification 
 		//DesiredCapabilities cp=new DesiredCapabilities();
 		//cp.setCapability(ChromeOptions.CAPABILITY, op);
 		//op.merge(cp);
 		//return op;
 		
-	    WebDriver driver= new ChromeDriver(op);
+	   // WebDriver driver= new ChromeDriver(op);
     //	ChromeDriver driver1= new ChromeDriver(); //--> donot  use this always use WebDriver parent reference
                 //driver.get("https://rahulshettyacademy.com/locatorspractice/");
-                driver.get("https://www.amazon.com/");
+               // driver.get("https://www.amazon.com/");
                
-}
-		
+//}
+		//----------------------------firefox ( not working )-------------------------------------------//	
 	/*
 	 * opening/launch firefox - geckodriver download public static void
 	 * OpenFirefoxbrowser() { System.setProperty("webdriver.gecko.driver",
@@ -49,14 +49,14 @@ public class OpeningBrowser {
 	 * driver.get("https://rahulshettyacademy.com/locatorspractice/"); }
 	 */
 		
-		// opening/launch Microsoft edge
-		
-//		System.setProperty("webdriver.edge.driver","C:\\Softwares\\Drivers\\msedgedriver.exe");
-//	  EdgeOptions opme= new EdgeOptions(); 
-//	  opme.addArguments("--remote-allow-origins=*"); // use this when url is not launching WebDriver driver= new EdgeDriver();
-//	  WebDriver driver= new EdgeDriver(opme);	
-//	  driver.get("https://rahulshettyacademy.com/locatorspractice/"); 
-//	  System.out.println("Microsoft Edge launch");
+	//--------------- opening/launch Microsoft edge (working fine )--------------------------//
+	public static void OpenEdgeBrowser() {
+	  System.setProperty("webdriver.edge.driver","C:\\Softwares\\Drivers\\msedgedriver.exe");
+	  EdgeOptions opme= new EdgeOptions(); 
+	  opme.addArguments("--remote-allow-origins=*"); // use this when url is not launching WebDriver driver= new EdgeDriver();
+	  WebDriver driver= new EdgeDriver(opme);
+	  System.out.println("Microsoft Edge launch");
+	  driver.get("https://www.amazon.com/");
 		 
 		
 	// reading data from excel file 
@@ -67,5 +67,5 @@ public class OpeningBrowser {
 		
 		
 		
-		
+	}	
 }
