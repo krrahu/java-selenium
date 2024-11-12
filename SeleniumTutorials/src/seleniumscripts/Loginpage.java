@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Loginpage  {
 	
 	public static void main(String[] args) throws InterruptedException {
-		OpeningBrowser.OpenChromebrowser();
+		OpeningBrowser.OpenEdgeBrowser();
 		Loginpage.login(null);
 	}
 	
@@ -24,7 +24,7 @@ public class Loginpage  {
 	driver.findElement(By.xpath("//button[@class='submit signInBtn']")).click();
 	//driver.findElement(By.className("signInBtn")).click();
 	System.out.println("login sucessfully");
-	//return;
+	//return ;
 	
 		}
 	

@@ -2,6 +2,7 @@ package seleniumscripts;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -65,9 +66,16 @@ public class Section11 {
 //}
 //	
 		//---------------------------------------part 98 and 99---------------------------------------------------------------------//f
-			String monthnumber="6";
+//			Scanner sc = new Scanner(System.in);
+//			String monthnumber=sc.nextLine();
+//			String date=sc.nextLine();
+//			String year=sc.nextLine();
+			
+		  String monthnumber="6";
 			String date="15";
 			String year="2027";
+
+			
 			 String[] str= {monthnumber,date,year};
 		 
 		  

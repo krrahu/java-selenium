@@ -10,7 +10,7 @@ public class brushup1 {
 		char ch='a';
 		double de=2.3;
 		boolean bol=true;
-		System.out.println(numb +" "+ str);
+		System.out.println(numb +" "+ str); // 
 		
 		// arrays
 		int []arr=new int [4]; // initiazling the array, here we defining array type and  lenght i.e size of array define
