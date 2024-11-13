@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Proxy;
@@ -49,9 +49,9 @@ public class Section13 {
 //		  driver.manage().deleteAllCookies();
 //		  driver.manage().deleteCookieNamed("");
 		  
-		//------------------ to take screenshot---------------------------//
-			File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(src, new File ("C:\\Users\\rkumar20\\screenshots\\pic.png"));
+		//------------------ to take screenshot- ( import common IO files) --------------------------//
+		//	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			//FileUtils.copyFile(src, new File ("C:\\Users\\rkumar20\\screenshots\\pic.png"));
 			
 		  
 		  //------------------ handle broken link (url)---------//
