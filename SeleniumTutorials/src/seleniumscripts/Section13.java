@@ -28,7 +28,7 @@ public class Section13 {
 		  System.setProperty("webdriver.edge.driver","C:\\Softwares\\Drivers\\msedgedriver.exe");
 		  EdgeOptions opme= new EdgeOptions(); 
 		 opme.setAcceptInsecureCerts(true);// use this when site is not private (SSL handling)
-		  opme.addArguments("--remote-allow-origins=*"); // use this when url is not launching WebDriver driver= new EdgeDriver();
+		  opme.addArguments("--remote-allow-origins=*"); // use this when url is not launching 
 		  WebDriver driver= new EdgeDriver(opme);
 		  System.out.println("Microsoft Edge launch");
 		 // driver.get("https://expired.badssl.com/");
