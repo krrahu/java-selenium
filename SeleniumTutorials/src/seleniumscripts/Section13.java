@@ -48,9 +48,10 @@ public class Section13 {
 //		  driver.manage().window().maximize();
 //		  driver.manage().deleteAllCookies();
 //		  driver.manage().deleteCookieNamed("");
-		  
-		//------------------ to take screenshot- ( import common IO files) --------------------------//
-		//	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+		//------------------ to take screenshot---------------------------//
+			//File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
 			//FileUtils.copyFile(src, new File ("C:\\Users\\rkumar20\\screenshots\\pic.png"));
 			
 		  
