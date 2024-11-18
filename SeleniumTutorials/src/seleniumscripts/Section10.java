@@ -39,7 +39,9 @@ public class Section10 {
 		
 	
 		
-		// ----------------hot to handle frames (part 91,92)----------------// 
+		// ----------------how to handle frames (part 91,92)----------------// 
+		// frame is used to drag and drop frames 
+		// window handling - .getWindowHandles();
 		
 		
 	}

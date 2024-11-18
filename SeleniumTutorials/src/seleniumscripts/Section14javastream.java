@@ -107,7 +107,8 @@ public static void main(String[] args) throws InterruptedException {
 System.out.println(values.stream().distinct().sorted().collect(Collectors.toList()));
 System.out.println(values.stream().distinct().sorted().collect(Collectors.toList()).get(3));
 
- 
+ //-----------------part- 116,117,118 ------------------//
+
  
  
 }
