@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-18T23:25:29 IST" name="Suite" finished-at="2024-11-18T23:25:29 IST" duration-ms="139">
+    <groups>
+      <group name="smoke">
+        <method signature="test4.testerA()[pri:0, instance:TestNG.test4@4b2bac3f]" name="testerA" class="TestNG.test4"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-11-18T23:25:29 IST" name="Test" finished-at="2024-11-18T23:25:29 IST" duration-ms="139">
+      <class name="TestNG.test3">
+        <test-method signature="APILogin()[pri:0, instance:TestNG.test3@3bf7ca37]" started-at="2024-11-18T23:25:29 IST" name="APILogin" finished-at="2024-11-18T23:25:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APILogin -->
+        <test-method signature="MobileLogin()[pri:0, instance:TestNG.test3@3bf7ca37]" started-at="2024-11-18T23:25:29 IST" name="MobileLogin" finished-at="2024-11-18T23:25:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogin -->
+        <test-method signature="WebLogin()[pri:0, instance:TestNG.test3@3bf7ca37]" started-at="2024-11-18T23:25:29 IST" name="WebLogin" finished-at="2024-11-18T23:25:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogin -->
+      </class> <!-- TestNG.test3 -->
+      <class name="TestNG.test4">
+        <test-method signature="testerM()[pri:0, instance:TestNG.test4@4b2bac3f]" started-at="2024-11-18T23:25:29 IST" name="testerM" finished-at="2024-11-18T23:25:29 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testerM -->
+        <test-method signature="testerW()[pri:0, instance:TestNG.test4@4b2bac3f]" started-at="2024-11-18T23:25:29 IST" name="testerW" finished-at="2024-11-18T23:25:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testerW -->
+        <test-method signature="testerA()[pri:0, instance:TestNG.test4@4b2bac3f]" started-at="2024-11-18T23:25:29 IST" name="testerA" finished-at="2024-11-18T23:25:29 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testerA -->
+        <test-method signature="Business()[pri:0, instance:TestNG.test4@4b2bac3f]" started-at="2024-11-18T23:25:29 IST" name="Business" finished-at="2024-11-18T23:25:29 IST" depends-on-methods="TestNG.test4.testerM, TestNG.test4.testerW" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Business -->
+      </class> <!-- TestNG.test4 -->
+      <class name="TestNG.Test1">
+        <test-method is-config="true" signature="BS()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="BS" finished-at="2024-11-18T23:25:29 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="BT()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="BT" finished-at="2024-11-18T23:25:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT -->
+        <test-method is-config="true" signature="BC()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="BC" finished-at="2024-11-18T23:25:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="bm" finished-at="2024-11-18T23:25:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="test()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="test" finished-at="2024-11-18T23:25:29 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="am()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="am" finished-at="2024-11-18T23:25:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="AC" finished-at="2024-11-18T23:25:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+        <test-method is-config="true" signature="AT()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="AT" finished-at="2024-11-18T23:25:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AT -->
+        <test-method is-config="true" signature="AS()[pri:0, instance:TestNG.Test1@15de0b3c]" started-at="2024-11-18T23:25:29 IST" name="AS" finished-at="2024-11-18T23:25:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AS -->
+      </class> <!-- TestNG.Test1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
