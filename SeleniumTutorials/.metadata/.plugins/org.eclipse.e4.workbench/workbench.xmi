@@ -353,7 +353,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JjxQcJn8Ee-Py_565JtSdg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Jj060Jn8Ee-Py_565JtSdg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_JRlUhZn8Ee-Py_565JtSdg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_z_yVwKXcEe-9iqOonK7ogA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_JRlUhZn8Ee-Py_565JtSdg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JjxQcZn8Ee-Py_565JtSdg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -381,7 +381,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JjxQeJn8Ee-Py_565JtSdg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Jj2I8Jn8Ee-Py_565JtSdg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_JRktM5n8Ee-Py_565JtSdg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_z_1ZEaXcEe-9iqOonK7ogA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_JRktM5n8Ee-Py_565JtSdg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JjxQeZn8Ee-Py_565JtSdg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -658,6 +658,10 @@
     <bindings xmi:id="_JSMYRpn8Ee-Py_565JtSdg" keySequence="ALT+SHIFT+D O" command="_JRgbzpn8Ee-Py_565JtSdg"/>
     <bindings xmi:id="_JSMYR5n8Ee-Py_565JtSdg" keySequence="ALT+SHIFT+D P" command="_JRlUfJn8Ee-Py_565JtSdg"/>
     <bindings xmi:id="_JSMYSJn8Ee-Py_565JtSdg" keySequence="ALT+SHIFT+D Q" command="_JRmis5n8Ee-Py_565JtSdg"/>
+    <bindings xmi:id="_zzN5YKXcEe-9iqOonK7ogA" keySequence="ALT+SHIFT+X G" command="_zy0QxKXcEe-9iqOonK7ogA"/>
+    <bindings xmi:id="_zzPHgKXcEe-9iqOonK7ogA" keySequence="ALT+SHIFT+X N" command="_zy0QxaXcEe-9iqOonK7ogA"/>
+    <bindings xmi:id="_zzPukKXcEe-9iqOonK7ogA" keySequence="ALT+SHIFT+D G" command="_zy030aXcEe-9iqOonK7ogA"/>
+    <bindings xmi:id="_zzPukaXcEe-9iqOonK7ogA" keySequence="ALT+SHIFT+D N" command="_zy0Qw6XcEe-9iqOonK7ogA"/>
   </bindingTables>
   <bindingTables xmi:id="_JR-84pn8Ee-Py_565JtSdg" elementId="org.eclipse.jdt.ui.javaEditorScope" bindingContext="_JRsB8Jn8Ee-Py_565JtSdg">
     <bindings xmi:id="_JR-845n8Ee-Py_565JtSdg" keySequence="CTRL+SHIFT+P" command="_JRjfGZn8Ee-Py_565JtSdg"/>
@@ -1304,6 +1308,12 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.pde.ui"/>
     <tags>View</tags>
     <tags>categoryTag:Plug-in Development</tags>
+  </descriptors>
+  <descriptors xmi:id="_z-FFkKXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.ResultView" label="TestNG" iconURI="platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif" tooltip="" category="Java" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.testng.eclipse.ui.TestRunnerViewPart"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.testng.eclipse"/>
+    <tags>View</tags>
+    <tags>categoryTag:Java</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
@@ -2242,6 +2252,15 @@
   <commands xmi:id="_JgmAp5n8Ee-Py_565JtSdg" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Display" commandName="Display" description="Display Result of Evaluating Selected Text" category="_JRd_opn8Ee-Py_565JtSdg"/>
   <commands xmi:id="_JgmnsJn8Ee-Py_565JtSdg" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Inspect" commandName="Inspect" description="Inspect Result of Evaluating Selected Text" category="_JRd_opn8Ee-Py_565JtSdg"/>
   <commands xmi:id="_JgmnsZn8Ee-Py_565JtSdg" elementId="AUTOGEN:::org.eclipse.pde.ui.logViewActions/org.eclipse.jdt.debug.ui.LogViewActions.showStackTrace" commandName="Show Stack Trace in Console View" description="Show Stack Trace in Console View" category="_JRd_opn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy0QwaXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.createClassAction" commandName="Create TestNG class" description="Create a TestNG class to test this class" category="_JRd_kJn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy0QwqXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.shortcut.rerunLast" commandName="Rerun TestNG Test" description="Rerun the last TestNG Test" category="_JRd_lpn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy0Qw6XcEe-9iqOonK7ogA" elementId="org.testng.eclipse.shortcut.debug" commandName="Debug TestNG Test" description="Debug TestNG Test" category="_JRd_lpn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy0QxKXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.shortcut.testngSuite.run" commandName="Run TestNG Suite" description="Run TestNG Suite" category="_JRd_lpn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy0QxaXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.shortcut.run" commandName="Run TestNG Test" description="Run TestNG Test" category="_JRd_lpn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy0QxqXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.convertToYamlAction" commandName="Convert to YAML" description="Convert the TestNG Suite XML file to YAML" category="_JRd_opn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy030KXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.shortcut.rerunFailed" commandName="Rerun Failed TestNG Test" description="Rerun the failed TestNG Test" category="_JRd_lpn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy030aXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.shortcut.testngSuite.debug" commandName="Debug TestNG Suite" description="Debug TestNG Suite" category="_JRd_lpn8Ee-Py_565JtSdg"/>
+  <commands xmi:id="_zy030qXcEe-9iqOonK7ogA" elementId="org.testng.eclipse.convertAction" commandName="Convert to TestNG" description="Convert the selection to TestNG" category="_JRd_kJn8Ee-Py_565JtSdg"/>
   <addons xmi:id="_JQ2Uf5n8Ee-Py_565JtSdg" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_JQ2UgJn8Ee-Py_565JtSdg" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_JQ2UgZn8Ee-Py_565JtSdg" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2253,7 +2272,7 @@
   <addons xmi:id="_JQ2Uh5n8Ee-Py_565JtSdg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_JQ2UiJn8Ee-Py_565JtSdg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_JRBTkJn8Ee-Py_565JtSdg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_zzowIKXcEe-9iqOonK7ogA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_JRd_gJn8Ee-Py_565JtSdg" elementId="org.eclipse.team.ui.category.team" name="Version control (Team)" description="Actions that apply when working with a version control system"/>
   <categories xmi:id="_JRd_gZn8Ee-Py_565JtSdg" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
