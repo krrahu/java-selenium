@@ -17,7 +17,8 @@ public class Lecture4
 	
 		// while loop
 		/*
-		 * int y = 2; while (y<10) { System.out.println("while loop is now executing"+
+		 * int y = 2; 
+		 * while (y<10) { System.out.println("while loop is now executing"+
 		 * " "+ y); y=y+1; //y++;
 		 * 
 		 * }
