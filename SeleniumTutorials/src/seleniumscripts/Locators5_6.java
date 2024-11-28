@@ -66,7 +66,7 @@ public class Locators5_6 {
 				driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
 				Thread.sleep(2000);
 				
-				
+				driver.getTitle();
 				// step 6:- entered correct UN and PWD > select Remember my username check box > click on sign
 				
 				driver.findElement(By.cssSelector("input[placeholder='Username']")).sendKeys("rahul");
