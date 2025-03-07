@@ -1037,3 +1037,7 @@ Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/Ma
 2025-03-07 19:27:08,726 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java-selenium\SeleniumTutorials\src\main\resources
 2025-03-07 19:27:08,730 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2025-03-07 19:27:08,733 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java-selenium\SeleniumTutorials\src\test\resources
+2025-03-07 19:30:38,436 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-03-07 19:30:38,439 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java-selenium\SeleniumTutorials\src\main\resources
+2025-03-07 19:30:38,442 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-03-07 19:30:38,445 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java-selenium\SeleniumTutorials\src\test\resources
