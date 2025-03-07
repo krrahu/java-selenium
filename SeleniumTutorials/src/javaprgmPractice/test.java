@@ -10,6 +10,7 @@ public class test {
 		int arr[]= {1,3,5,8,9,2,6,7};
 		int sizeofArray=arr.length;
 		System.out.println(sizeofArray);
+		
 		//int sortedarray= 
 				Arrays.sort(arr);
 			//	Arrays.toString(arr);
@@ -18,13 +19,13 @@ public class test {
 			 * Arrays. toString() method that converts a primitive array into a string
 			 * representation
 			 */
-				System.out.println(Arrays.toString(arr));
+				//System.out.println(Arrays.toString(arr)); // return o/p in []
 				System.out.println(arr[6]);// at index 6	
 				
-				//System.out.println(arr[sizeofArray-1]); // highest 
-				//System.out.println(arr[sizeofArray-2]); // 2nd highest
+				System.out.println(arr[sizeofArray-1]); // highest 
+				System.out.println(arr[sizeofArray-2]); // 2nd highest
 				
-				
+				//--------------------------------------------------------//
 				  int i=1; 
 				  
 				  for (int x = sizeofArray-i; x < arr.length; x++) 

@@ -23,17 +23,19 @@ public class Lecture10 {
 			System.out.println(marks[i]);
 			
 		}
-		//print marks of 5 subject when values definine in array it self
+		//print marks of 5 subject when values defining in array it self
 		int [] marks2 =  {30,45,58,77,90};
 		for (int i = 0; i <5; i++) {
 			System.out.println(marks2[i]);
 			
 		}
 		
-		// when user give the iputs
+		// when user give the inputs
+		System.out.println("user input---- ");
 		Scanner sc= new Scanner(System.in);
 		int size=sc.nextInt();// nextInt() is a method of scanner class we are calling it to take user input value and store it in reference varilave name size
 		int numbers[]=new int [size];
+		numbers[0]=111;
 		for (int i = 0; i <size; i++) {
 			System.out.println(numbers[i]);
 			
