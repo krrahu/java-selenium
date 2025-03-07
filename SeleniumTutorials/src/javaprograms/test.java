@@ -2,6 +2,7 @@ package javaprograms;
 
 import java.util.Scanner;
 
+// scanner class user input
 public class test {
 
 	public static void main(String[] args) {
