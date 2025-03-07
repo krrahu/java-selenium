@@ -25,12 +25,14 @@ public class Rca {
 				System.out.println(title);
 				String exptitle= "ProtoCommerce";
 
+				boolean val= true;
 				while (title.equalsIgnoreCase(exptitle)) {
 					System.out.println("title match");
-					return ;
+					driver.quit();
+					return;
 				}
 				
-				driver.quit();
+				// driver.quit(); -->  why it's not closing when define outside of loop
 				//driver.close();
 
 	}

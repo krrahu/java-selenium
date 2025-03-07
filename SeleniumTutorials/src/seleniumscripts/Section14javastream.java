@@ -44,6 +44,7 @@ public static void main(String[] args) throws InterruptedException {
 	  al.add("Rahul"); 
 	  al.add("kumar"); 
 	  al.add("Tester");
+	  
 	  // first it will Store all string values in stream() then from list it will filter the only  names whose first letter start with R then it will give count
  long total= al.stream().filter(s->s.startsWith("R")).count();
   System.out.println(total);

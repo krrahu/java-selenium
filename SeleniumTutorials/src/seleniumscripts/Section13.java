@@ -78,7 +78,7 @@ public class Section13 {
 					//Assert.assertTrue(false);
 				}
 		  
-				// 2nd Way bu using soft assert , it will check all link 
+				// 2nd Way by using soft assert , it will check all link 
 				
               // a.assertTrue(response<400, "The link with Text"+link.getText()+" is broken with code" +response);
 			              
